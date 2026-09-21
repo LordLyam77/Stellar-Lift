@@ -15,7 +15,6 @@ public enum Config {
     public static let appBuild = "1"
 
     /// Create ModelContainer with appropriate schema and configuration
-    @MainActor
     public static func createModelContainer() -> ModelContainer {
         let schema = Schema([
             Exercise.self,

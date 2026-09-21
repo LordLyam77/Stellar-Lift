@@ -16,7 +16,7 @@ struct StellarLiftApp: App {
         // Configure system tab bar and navigation bar dark appearance
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(Color(hex: "#05060F").opacity(0.92))
+        appearance.backgroundColor = UIColor(hex: "#05060F", alpha: 0.92)
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
 

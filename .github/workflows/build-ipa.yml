@@ -19,7 +19,8 @@ jobs:
 
       - name: Build Application (Ad-Hoc Signed for Sideloading)
         run: |
-          mkdir -p build/Payload
+          set -eo pipefail
+          mkdir -p build
           xcodebuild build \
             -project StellarLift.xcodeproj \
             -scheme StellarLift \
@@ -32,15 +33,25 @@ jobs:
             AD_HOC_CODE_SIGNING_ALLOWED=YES \
             DEVELOPMENT_TEAM="" \
             PROVISIONING_PROFILE_SPECIFIER="" \
-            CONFIGURATION_BUILD_DIR=build/Release-iphoneos | tee build/xcodebuild.log
+            CONFIGURATION_BUILD_DIR="$PWD/build/Release-iphoneos" 2>&1 | tee build/xcodebuild.log
 
       - name: Package .ipa
         run: |
-          cp -r build/Release-iphoneos/StellarLift.app build/Payload/
+          set -e
+          APP_PATH=$(find build -name "StellarLift.app" -type d | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "ERROR: StellarLift.app not found in build directory!"
+            find build -maxdepth 3
+            exit 1
+          fi
+          echo "Found app at: $APP_PATH"
+          mkdir -p build/Payload
+          cp -r "$APP_PATH" build/Payload/
           cd build
           zip -qr StellarLift.ipa Payload
           cd ..
-          echo "IPA built successfully: $(ls -lh build/StellarLift.ipa)"
+          echo "IPA packaged successfully:"
+          ls -lh build/StellarLift.ipa
 
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
