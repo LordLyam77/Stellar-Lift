@@ -130,8 +130,8 @@
 		20010036 /* ProgressionAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionAnalyzerTests.swift; sourceTree = "<group>"; };
 		20010037 /* EquipmentMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentMathTests.swift; sourceTree = "<group>"; };
 		20010038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40010001 /* StellarLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellarLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		40010002 /* StellarLiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StellarLiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20010039 /* StellarLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellarLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2001003A /* StellarLiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StellarLiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,8 +354,8 @@
 		60010004 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40010001 /* StellarLift.app */,
-				40010002 /* StellarLiftTests.xctest */,
+				20010039 /* StellarLift.app */,
+				2001003A /* StellarLiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,7 +377,7 @@
 			);
 			name = StellarLift;
 			productName = StellarLift;
-			productReference = 40010001 /* StellarLift.app */;
+			productReference = 20010039 /* StellarLift.app */;
 			productType = "com.apple.product-type.application";
 		};
 		40010002 /* StellarLiftTests */ = {
@@ -394,7 +394,7 @@
 			);
 			name = StellarLiftTests;
 			productName = StellarLiftTests;
-			productReference = 40010002 /* StellarLiftTests.xctest */;
+			productReference = 2001003A /* StellarLiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
