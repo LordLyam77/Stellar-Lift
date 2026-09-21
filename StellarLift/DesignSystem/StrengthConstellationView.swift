@@ -120,7 +120,7 @@ public struct StrengthConstellationView: View {
                 animatedScores = nodes.map { $0.score }
             }
         }
-        .onChange(of: nodes.map(\.score)) { newScores in
+        .onChange(of: nodes.map(\.score)) { _, newScores in
             withAnimation(.spring(response: 0.8, dampingFraction: 0.7)) {
                 animatedScores = newScores
             }

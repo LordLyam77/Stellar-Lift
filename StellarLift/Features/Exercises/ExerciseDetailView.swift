@@ -180,8 +180,8 @@ public struct ExerciseDetailView: View {
 
                 Spacer()
 
-                if let days = insight.daysAtCurrentWeight, days > 0 {
-                    Text("\(days) days at weight")
+                if insight.daysAtCurrentWeight > 0 {
+                    Text("\(insight.daysAtCurrentWeight) days at weight")
                         .font(.system(size: 11, weight: .semibold, design: .rounded))
                         .foregroundColor(selectedTheme.textMuted)
                 }
