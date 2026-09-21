@@ -8,19 +8,21 @@ rm -rf build
 mkdir -p build/Payload
 
 # 2. Archive unsigned release build
-xcodebuild archive \
+xcodebuild build \
   -project StellarLift.xcodeproj \
   -scheme StellarLift \
   -configuration Release \
+  -sdk iphoneos \
   -destination "generic/platform=iOS" \
-  -archivePath build/StellarLift.xcarchive \
-  CODE_SIGNING_ALLOWED=NO \
+  CODE_SIGN_IDENTITY="-" \
+  CODE_SIGN_STYLE=Manual \
   CODE_SIGNING_REQUIRED=NO \
-  CODE_SIGN_IDENTITY=""
+  AD_HOC_CODE_SIGNING_ALLOWED=YES \
+  CONFIGURATION_BUILD_DIR=build/Release-iphoneos
 
 # 3. Package into .ipa
 echo "📦 Packaging StellarLift.app into StellarLift.ipa..."
-cp -r build/StellarLift.xcarchive/Products/Applications/StellarLift.app build/Payload/
+cp -r build/Release-iphoneos/StellarLift.app build/Payload/
 cd build
 zip -qr StellarLift.ipa Payload
 cd ..
