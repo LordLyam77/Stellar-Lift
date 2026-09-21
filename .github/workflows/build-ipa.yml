@@ -19,16 +19,21 @@ jobs:
 
       - name: Build and Package .ipa
         run: |
+          set -e
           mkdir -p build/Payload
+
           xcodebuild build \
             -project StellarLift.xcodeproj \
             -scheme StellarLift \
             -configuration Release \
             -sdk iphoneos \
             -destination "generic/platform=iOS" \
-            CODE_SIGNING_ALLOWED=NO \
-            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_STYLE=Manual \
             CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            DEVELOPMENT_TEAM="" \
+            PROVISIONING_PROFILE_SPECIFIER="" \
             CONFIGURATION_BUILD_DIR=build/Release-iphoneos
 
           cp -r build/Release-iphoneos/StellarLift.app build/Payload/
