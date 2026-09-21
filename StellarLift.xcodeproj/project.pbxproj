@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10010001 /* StellarLiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010001 /* StellarLiftApp.swift */; };
+		10010002 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010002 /* Config.swift */; };
+		10010003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010003 /* AppState.swift */; };
+		10010004 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010004 /* Exercise.swift */; };
+		10010005 /* SplitDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010005 /* SplitDay.swift */; };
+		10010006 /* WeeklySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010006 /* WeeklySchedule.swift */; };
+		10010007 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010007 /* WorkoutSession.swift */; };
+		10010008 /* EquipmentProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010008 /* EquipmentProfile.swift */; };
+		10010009 /* PersonalRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010009 /* PersonalRecord.swift */; };
+		1001000A /* BodyMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001000A /* BodyMetric.swift */; };
+		1001000B /* WorkoutTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001000B /* WorkoutTemplate.swift */; };
+		1001000C /* ProgressionAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001000C /* ProgressionAnalyzer.swift */; };
+		1001000D /* EquipmentMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001000D /* EquipmentMath.swift */; };
+		1001000E /* WarmupCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001000E /* WarmupCalculator.swift */; };
+		1001000F /* PRDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001000F /* PRDetector.swift */; };
+		10010010 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010010 /* NotificationScheduler.swift */; };
+		10010011 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010011 /* Theme.swift */; };
+		10010012 /* StarfieldBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010012 /* StarfieldBackground.swift */; };
+		10010013 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010013 /* GlassCard.swift */; };
+		10010014 /* OrbitRestTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010014 /* OrbitRestTimerView.swift */; };
+		10010015 /* StarburstCelebration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010015 /* StarburstCelebration.swift */; };
+		10010016 /* StrengthConstellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010016 /* StrengthConstellationView.swift */; };
+		10010017 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010017 /* TodayView.swift */; };
+		10010018 /* CoachCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010018 /* CoachCardView.swift */; };
+		10010019 /* ActiveWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010019 /* ActiveWorkoutView.swift */; };
+		1001001A /* SetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001001A /* SetRowView.swift */; };
+		1001001B /* PlateCalculatorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001001B /* PlateCalculatorSheet.swift */; };
+		1001001C /* WarmupSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001001C /* WarmupSheet.swift */; };
+		1001001D /* UnplannedExerciseSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001001D /* UnplannedExerciseSheet.swift */; };
+		1001001E /* WorkoutSummarySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001001E /* WorkoutSummarySheet.swift */; };
+		1001001F /* SplitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001001F /* SplitsView.swift */; };
+		10010020 /* SplitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010020 /* SplitDetailView.swift */; };
+		10010021 /* TemplatesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010021 /* TemplatesSheet.swift */; };
+		10010022 /* ExerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010022 /* ExerciseListView.swift */; };
+		10010023 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010023 /* ExerciseDetailView.swift */; };
+		10010024 /* ExerciseEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010024 /* ExerciseEditView.swift */; };
+		10010025 /* ProgressDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010025 /* ProgressDashboardView.swift */; };
+		10010026 /* PRWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010026 /* PRWallView.swift */; };
+		10010027 /* HistorySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010027 /* HistorySearchView.swift */; };
+		10010028 /* CoachDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010028 /* CoachDashboardView.swift */; };
+		10010029 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010029 /* SettingsView.swift */; };
+		1001002A /* EquipmentEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001002A /* EquipmentEditorView.swift */; };
+		1001002B /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001002B /* NotificationSettingsView.swift */; };
+		1001002C /* DataExportImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001002C /* DataExportImportView.swift */; };
+		1001002D /* AICoachSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001002D /* AICoachSettingsView.swift */; };
+		1001002E /* CoachProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001002E /* CoachProvider.swift */; };
+		1001002F /* TrainingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001002F /* TrainingContext.swift */; };
+		10010030 /* RuleBasedCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010030 /* RuleBasedCoach.swift */; };
+		10010031 /* LLMCoach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010031 /* LLMCoach.swift */; };
+		10010032 /* SeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010032 /* SeedData.swift */; };
+		10010034 /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 20010034 /* exercises.json */; };
+		10010035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20010035 /* Assets.xcassets */; };
+		10010036 /* ProgressionAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010036 /* ProgressionAnalyzerTests.swift */; };
+		10010037 /* EquipmentMathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20010037 /* EquipmentMathTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30010001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00010001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40010001;
+			remoteInfo = StellarLift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20010001 /* StellarLiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarLiftApp.swift; sourceTree = "<group>"; };
+		20010002 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		20010003 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		20010004 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		20010005 /* SplitDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitDay.swift; sourceTree = "<group>"; };
+		20010006 /* WeeklySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklySchedule.swift; sourceTree = "<group>"; };
+		20010007 /* WorkoutSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		20010008 /* EquipmentProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentProfile.swift; sourceTree = "<group>"; };
+		20010009 /* PersonalRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalRecord.swift; sourceTree = "<group>"; };
+		2001000A /* BodyMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMetric.swift; sourceTree = "<group>"; };
+		2001000B /* WorkoutTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTemplate.swift; sourceTree = "<group>"; };
+		2001000C /* ProgressionAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionAnalyzer.swift; sourceTree = "<group>"; };
+		2001000D /* EquipmentMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentMath.swift; sourceTree = "<group>"; };
+		2001000E /* WarmupCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupCalculator.swift; sourceTree = "<group>"; };
+		2001000F /* PRDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRDetector.swift; sourceTree = "<group>"; };
+		20010010 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		20010011 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		20010012 /* StarfieldBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarfieldBackground.swift; sourceTree = "<group>"; };
+		20010013 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		20010014 /* OrbitRestTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitRestTimerView.swift; sourceTree = "<group>"; };
+		20010015 /* StarburstCelebration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarburstCelebration.swift; sourceTree = "<group>"; };
+		20010016 /* StrengthConstellationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrengthConstellationView.swift; sourceTree = "<group>"; };
+		20010017 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		20010018 /* CoachCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachCardView.swift; sourceTree = "<group>"; };
+		20010019 /* ActiveWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveWorkoutView.swift; sourceTree = "<group>"; };
+		2001001A /* SetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRowView.swift; sourceTree = "<group>"; };
+		2001001B /* PlateCalculatorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateCalculatorSheet.swift; sourceTree = "<group>"; };
+		2001001C /* WarmupSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmupSheet.swift; sourceTree = "<group>"; };
+		2001001D /* UnplannedExerciseSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplannedExerciseSheet.swift; sourceTree = "<group>"; };
+		2001001E /* WorkoutSummarySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummarySheet.swift; sourceTree = "<group>"; };
+		2001001F /* SplitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitsView.swift; sourceTree = "<group>"; };
+		20010020 /* SplitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitDetailView.swift; sourceTree = "<group>"; };
+		20010021 /* TemplatesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesSheet.swift; sourceTree = "<group>"; };
+		20010022 /* ExerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListView.swift; sourceTree = "<group>"; };
+		20010023 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		20010024 /* ExerciseEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseEditView.swift; sourceTree = "<group>"; };
+		20010025 /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
+		20010026 /* PRWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRWallView.swift; sourceTree = "<group>"; };
+		20010027 /* HistorySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySearchView.swift; sourceTree = "<group>"; };
+		20010028 /* CoachDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDashboardView.swift; sourceTree = "<group>"; };
+		20010029 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2001002A /* EquipmentEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentEditorView.swift; sourceTree = "<group>"; };
+		2001002B /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		2001002C /* DataExportImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExportImportView.swift; sourceTree = "<group>"; };
+		2001002D /* AICoachSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AICoachSettingsView.swift; sourceTree = "<group>"; };
+		2001002E /* CoachProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachProvider.swift; sourceTree = "<group>"; };
+		2001002F /* TrainingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingContext.swift; sourceTree = "<group>"; };
+		20010030 /* RuleBasedCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleBasedCoach.swift; sourceTree = "<group>"; };
+		20010031 /* LLMCoach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMCoach.swift; sourceTree = "<group>"; };
+		20010032 /* SeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedData.swift; sourceTree = "<group>"; };
+		20010033 /* StellarLiftWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarLiftWidget.swift; sourceTree = "<group>"; };
+		20010034 /* exercises.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
+		20010035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20010036 /* ProgressionAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressionAnalyzerTests.swift; sourceTree = "<group>"; };
+		20010037 /* EquipmentMathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentMathTests.swift; sourceTree = "<group>"; };
+		20010038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40010001 /* StellarLift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellarLift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40010002 /* StellarLiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StellarLiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50010001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50010002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60010001 /* Main Group */ = {
+			isa = PBXGroup;
+			children = (
+				60010002 /* StellarLift */,
+				60010003 /* StellarLiftTests */,
+				60010004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60010002 /* StellarLift */ = {
+			isa = PBXGroup;
+			children = (
+				60010005 /* App */,
+				60010006 /* Models */,
+				60010007 /* Core */,
+				60010008 /* DesignSystem */,
+				60010009 /* Features */,
+				6001000A /* CoachEngine */,
+				6001000B /* Resources */,
+				6001000C /* Widget */,
+			);
+			path = StellarLift;
+			sourceTree = "<group>";
+		};
+		60010005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				20010001 /* StellarLiftApp.swift */,
+				20010002 /* Config.swift */,
+				20010003 /* AppState.swift */,
+				20010038 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		60010006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20010004 /* Exercise.swift */,
+				20010005 /* SplitDay.swift */,
+				20010006 /* WeeklySchedule.swift */,
+				20010007 /* WorkoutSession.swift */,
+				20010008 /* EquipmentProfile.swift */,
+				20010009 /* PersonalRecord.swift */,
+				2001000A /* BodyMetric.swift */,
+				2001000B /* WorkoutTemplate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60010007 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2001000C /* ProgressionAnalyzer.swift */,
+				2001000D /* EquipmentMath.swift */,
+				2001000E /* WarmupCalculator.swift */,
+				2001000F /* PRDetector.swift */,
+				20010010 /* NotificationScheduler.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		60010008 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				20010011 /* Theme.swift */,
+				20010012 /* StarfieldBackground.swift */,
+				20010013 /* GlassCard.swift */,
+				20010014 /* OrbitRestTimerView.swift */,
+				20010015 /* StarburstCelebration.swift */,
+				20010016 /* StrengthConstellationView.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		60010009 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6001000D /* Today */,
+				6001000E /* Workout */,
+				6001000F /* Splits */,
+				60010010 /* Exercises */,
+				60010011 /* Progress */,
+				60010012 /* Coach */,
+				60010013 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6001000D /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				20010017 /* TodayView.swift */,
+				20010018 /* CoachCardView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		6001000E /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				20010019 /* ActiveWorkoutView.swift */,
+				2001001A /* SetRowView.swift */,
+				2001001B /* PlateCalculatorSheet.swift */,
+				2001001C /* WarmupSheet.swift */,
+				2001001D /* UnplannedExerciseSheet.swift */,
+				2001001E /* WorkoutSummarySheet.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		6001000F /* Splits */ = {
+			isa = PBXGroup;
+			children = (
+				2001001F /* SplitsView.swift */,
+				20010020 /* SplitDetailView.swift */,
+				20010021 /* TemplatesSheet.swift */,
+			);
+			path = Splits;
+			sourceTree = "<group>";
+		};
+		60010010 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				20010022 /* ExerciseListView.swift */,
+				20010023 /* ExerciseDetailView.swift */,
+				20010024 /* ExerciseEditView.swift */,
+			);
+			path = Exercises;
+			sourceTree = "<group>";
+		};
+		60010011 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				20010025 /* ProgressDashboardView.swift */,
+				20010026 /* PRWallView.swift */,
+				20010027 /* HistorySearchView.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		60010012 /* Coach */ = {
+			isa = PBXGroup;
+			children = (
+				20010028 /* CoachDashboardView.swift */,
+			);
+			path = Coach;
+			sourceTree = "<group>";
+		};
+		60010013 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				20010029 /* SettingsView.swift */,
+				2001002A /* EquipmentEditorView.swift */,
+				2001002B /* NotificationSettingsView.swift */,
+				2001002C /* DataExportImportView.swift */,
+				2001002D /* AICoachSettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6001000A /* CoachEngine */ = {
+			isa = PBXGroup;
+			children = (
+				2001002E /* CoachProvider.swift */,
+				2001002F /* TrainingContext.swift */,
+				20010030 /* RuleBasedCoach.swift */,
+				20010031 /* LLMCoach.swift */,
+			);
+			path = CoachEngine;
+			sourceTree = "<group>";
+		};
+		6001000B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20010032 /* SeedData.swift */,
+				20010034 /* exercises.json */,
+				20010035 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6001000C /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				20010033 /* StellarLiftWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		60010003 /* StellarLiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				20010036 /* ProgressionAnalyzerTests.swift */,
+				20010037 /* EquipmentMathTests.swift */,
+			);
+			path = StellarLiftTests;
+			sourceTree = "<group>";
+		};
+		60010004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40010001 /* StellarLift.app */,
+				40010002 /* StellarLiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40010001 /* StellarLift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70010001 /* Build configuration list for PBXNativeTarget "StellarLift" */;
+			buildPhases = (
+				80010001 /* Sources */,
+				50010001 /* Frameworks */,
+				90010001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StellarLift;
+			productName = StellarLift;
+			productReference = 40010001 /* StellarLift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40010002 /* StellarLiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70010002 /* Build configuration list for PBXNativeTarget "StellarLiftTests" */;
+			buildPhases = (
+				80010002 /* Sources */,
+				50010002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0010001 /* PBXTargetDependency */,
+			);
+			name = StellarLiftTests;
+			productName = StellarLiftTests;
+			productReference = 40010002 /* StellarLiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00010001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					40010001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					40010002 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 40010001;
+					};
+				};
+			};
+			buildConfigurationList = 70010003 /* Build configuration list for PBXProject "StellarLift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60010001 /* Main Group */;
+			productRefGroup = 60010004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40010001 /* StellarLift */,
+				40010002 /* StellarLiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90010001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10010034 /* exercises.json in Resources */,
+				10010035 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80010001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10010001 /* StellarLiftApp.swift in Sources */,
+				10010002 /* Config.swift in Sources */,
+				10010003 /* AppState.swift in Sources */,
+				10010004 /* Exercise.swift in Sources */,
+				10010005 /* SplitDay.swift in Sources */,
+				10010006 /* WeeklySchedule.swift in Sources */,
+				10010007 /* WorkoutSession.swift in Sources */,
+				10010008 /* EquipmentProfile.swift in Sources */,
+				10010009 /* PersonalRecord.swift in Sources */,
+				1001000A /* BodyMetric.swift in Sources */,
+				1001000B /* WorkoutTemplate.swift in Sources */,
+				1001000C /* ProgressionAnalyzer.swift in Sources */,
+				1001000D /* EquipmentMath.swift in Sources */,
+				1001000E /* WarmupCalculator.swift in Sources */,
+				1001000F /* PRDetector.swift in Sources */,
+				10010010 /* NotificationScheduler.swift in Sources */,
+				10010011 /* Theme.swift in Sources */,
+				10010012 /* StarfieldBackground.swift in Sources */,
+				10010013 /* GlassCard.swift in Sources */,
+				10010014 /* OrbitRestTimerView.swift in Sources */,
+				10010015 /* StarburstCelebration.swift in Sources */,
+				10010016 /* StrengthConstellationView.swift in Sources */,
+				10010017 /* TodayView.swift in Sources */,
+				10010018 /* CoachCardView.swift in Sources */,
+				10010019 /* ActiveWorkoutView.swift in Sources */,
+				1001001A /* SetRowView.swift in Sources */,
+				1001001B /* PlateCalculatorSheet.swift in Sources */,
+				1001001C /* WarmupSheet.swift in Sources */,
+				1001001D /* UnplannedExerciseSheet.swift in Sources */,
+				1001001E /* WorkoutSummarySheet.swift in Sources */,
+				1001001F /* SplitsView.swift in Sources */,
+				10010020 /* SplitDetailView.swift in Sources */,
+				10010021 /* TemplatesSheet.swift in Sources */,
+				10010022 /* ExerciseListView.swift in Sources */,
+				10010023 /* ExerciseDetailView.swift in Sources */,
+				10010024 /* ExerciseEditView.swift in Sources */,
+				10010025 /* ProgressDashboardView.swift in Sources */,
+				10010026 /* PRWallView.swift in Sources */,
+				10010027 /* HistorySearchView.swift in Sources */,
+				10010028 /* CoachDashboardView.swift in Sources */,
+				10010029 /* SettingsView.swift in Sources */,
+				1001002A /* EquipmentEditorView.swift in Sources */,
+				1001002B /* NotificationSettingsView.swift in Sources */,
+				1001002C /* DataExportImportView.swift in Sources */,
+				1001002D /* AICoachSettingsView.swift in Sources */,
+				1001002E /* CoachProvider.swift in Sources */,
+				1001002F /* TrainingContext.swift in Sources */,
+				10010030 /* RuleBasedCoach.swift in Sources */,
+				10010031 /* LLMCoach.swift in Sources */,
+				10010032 /* SeedData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80010002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10010036 /* ProgressionAnalyzerTests.swift in Sources */,
+				10010037 /* EquipmentMathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0010001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40010001 /* StellarLift */;
+			targetProxy = 30010001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B0010001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StellarLift/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellarlift.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B0010002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StellarLift/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellarlift.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B0010003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0010004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0010005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellarlift.appTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StellarLift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StellarLift";
+			};
+			name = Debug;
+		};
+		B0010006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stellarlift.appTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StellarLift.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StellarLift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70010001 /* Build configuration list for PBXNativeTarget "StellarLift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0010001 /* Debug */,
+				B0010002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70010002 /* Build configuration list for PBXNativeTarget "StellarLiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0010005 /* Debug */,
+				B0010006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70010003 /* Build configuration list for PBXProject "StellarLift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0010003 /* Debug */,
+				B0010004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 00010001 /* Project object */;
+}

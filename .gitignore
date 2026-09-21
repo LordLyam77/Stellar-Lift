@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+
+# Build & IPA outputs
+build/
+*.ipa
+*.xcarchive
+
+# Temporary files
+*.swp
+*~
